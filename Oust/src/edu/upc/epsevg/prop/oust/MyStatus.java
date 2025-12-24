@@ -4,10 +4,24 @@
  */
 package edu.upc.epsevg.prop.oust;
 
-/**
- *
- * @author Usuari
- */
 public class MyStatus {
-    
+
+    // Conteo de fichas
+    public int stonesP1;
+    public int stonesP2;
+
+    // Tamaño del grupo más grande
+    public int biggestGroupP1;
+    public int biggestGroupP2;
+
+    // Última jugada fue captura
+    public boolean lastMoveWasCapture;
+
+    public MyStatus() {
+        stonesP1 = 0;
+        stonesP2 = 0;
+        biggestGroupP1 = 0;
+        biggestGroupP2 = 0;
+        lastMoveWasCapture = false;
+    }
 }
