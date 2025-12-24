@@ -1,8 +1,9 @@
 package edu.upc.epsevg.prop.oust;
 
 import edu.upc.epsevg.prop.oust.players.HumanPlayer;
-import edu.upc.epsevg.prop.oust.players.RamosLopez.PlayerMiniMaxIDS;
 import edu.upc.epsevg.prop.oust.players.RandomPlayer;
+import edu.upc.epsevg.prop.oust.players.ramos47262693Q_lopez46497328E.IDSMinimaxPlayer;
+import edu.upc.epsevg.prop.oust.players.ramos47262693Q_lopez46497328E.MinimaxPlayer;
 
 
 import javax.swing.SwingUtilities;
@@ -33,19 +34,22 @@ public class Game {
                 // Deixem el tontet en mans d'una mala persona
                 //---------------------------------------------
                 //IPlayer player1 = new RandomPlayer("Asterix");
-                //IPlayer player2 = new MalaOustiaPlayer();
+               //IPlayer player2 = new MalaOustiaPlayer();
                 
                 
                 //---------------------------------------------
                 // Enjoy!
                 //---------------------------------------------
                 //IPlayer player1 = new RandomPlayer("");
-                //IPlayer player1 = new MOustValuablePlayer();
-                //IPlayer player2 = new HumanPlayer("Human2");
-                
-                IPlayer player1 = new PlayerMiniMaxIDS();
                 IPlayer player2 = new MOustValuablePlayer();
+                //IPlayer player1 = new HumanPlayer("Human1");
+                //IPlayer player1 = new MinimaxPlayer(3);
 
+                //IPlayer player2 = new MinimaxPlayer(4);
+                IPlayer player1 = new IDSMinimaxPlayer(3000);
+                //IPlayer player2 = new MOustValuablePlayer();
+                //IPlayer player2 = new RandomPlayer("");
+                //IPlayer player2 = new HumanPlayer("Human2");
 
                 
                 //---------------------------------------------
